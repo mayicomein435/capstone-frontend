@@ -1,0 +1,91 @@
+/* Main container styling */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+/* Content styling */
+.content {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Heading styling */
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* Paragraph styling */
+.content .lead {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: #666666;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Button styling */
+.btn-primary, .btn-secondary {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+    .content {
+        padding: 20px;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
